@@ -1,8 +1,7 @@
 import { Request, Response } from 'express';
 
 export const home = (req: Request, res: Response) => {      // 'export' exporta a rota da página 'home' para ser possível utilizada do lado de fora
-
-    res.send('home no controller!');     // resposta da rota
+    res.render('pages/page');
 
 }
 

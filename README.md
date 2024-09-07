@@ -3,6 +3,7 @@
 
 ### Prérequisitos globais:
 Instalar as  dependência `nodemon, typescript e o ts-node` globalmente 
+
 `npm i -g nodemon typescript ts-node`
 
 ### Iniciar o arquivo de configuração do npm:
