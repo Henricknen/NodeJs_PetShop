@@ -1,9 +1,12 @@
+type PetType = 'dog' | 'cat' | 'fish';      // type 'PetType' contém os tipes de pets
+type PetSex = 'Masculino' | 'Feminino';
+ 
 type Pet = {
-    type: 'dog' | 'cat' | 'fish',
+    type: PetType,
     image: string,
     name: string,
     color: string,
-    sex: 'Masculino' | 'Feminino'
+    sex: PetSex
 };
 
 const data: Pet[] = [       // 'data' é um array de 'Pet'
@@ -131,5 +134,13 @@ const data: Pet[] = [       // 'data' é um array de 'Pet'
 export const Pet = {
     getAll: (): Pet[] => {     // função 'getAll' retorna todos os pets
         return data;
+    },
+    getFromType: (type: PetType): Pet[] => {        // função 'getFromType' faz a filtragem pelo type dos pets
+        return data.filter(item => item.type === type);        // fazendo filtragem nos dados             
+    },
+    getFromName: (name: String): Pet[] => {     // função 'getFromName' filtra pelo nome dos pets
+        return data.filter(item =>
+            item.name.toLowerCase().indexOf(name.toLowerCase()) > -1        // 'toLowerCase' transforma os nomes dos animais enviados quanto os salvos em minúsculos
+        );
     }
 };
