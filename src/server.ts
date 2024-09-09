@@ -17,7 +17,7 @@ import mainRoutes from './routes/index';
  server.use(mainRoutes);
 
  server.use((req, res)=> {
-    res.send('página não encontrada!');
+    res.render('pages/404');
  });
 
  server.listen(process.env.PORT);       // colocando servidor para 'rodar'
