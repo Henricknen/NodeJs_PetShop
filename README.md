@@ -1,7 +1,7 @@
 # NodeJs_PetShop
 `sistema_de_pet_shop_que_mostra_animais_diponiveis_para_adoção_criando_utilizando_node_js e typescript`
 
-### Prérequisitos globais:
+### Pré-requisitos globais:
 Instalar as  dependência `nodemon, typescript e o ts-node` globalmente 
 
 `npm i -g nodemon typescript ts-node`
@@ -26,3 +26,16 @@ Para criar o arquivo de configuração do TypeScript, utilize o comando abaixo q
 
 ### Para rodar o projeto 
 `npm run start-dev`
+
+
+### executar sistema clonado do github:
+clonar o sistema
+`git clone https://github.com/Henricknen/NodeJs_PetShop`
+
+### instale as dependências:
+navegue até o diretório clonado e digite
+`npm install`
+
+### executar
+após instalar as dependências, execute o projeto
+`npm start`
